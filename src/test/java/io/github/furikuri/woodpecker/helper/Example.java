@@ -1,4 +1,4 @@
-package io.github.furikuri.woodpecker.examples;
+package io.github.furikuri.woodpecker.helper;
 
 import io.github.furikuri.woodpecker.annotation.NotNull;
 

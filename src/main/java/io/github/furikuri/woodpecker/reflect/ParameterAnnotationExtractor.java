@@ -9,14 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class ParameterAnnotationExtractor {
-
-    /**
-     * Extract for an annotation the matching parameters for a method signature.
-     *
-     * @param annotationType
-     * @param joinPoint
-     * @return
-     */
     public static final List<ParameterInfo> extractMatchedParameters(
             Class<? extends Annotation> annotationType,
             JoinPoint joinPoint) {

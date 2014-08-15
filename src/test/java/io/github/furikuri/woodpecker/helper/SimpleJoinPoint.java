@@ -1,4 +1,4 @@
-package io.github.furikuri.woodpecker.examples;
+package io.github.furikuri.woodpecker.helper;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.Signature;

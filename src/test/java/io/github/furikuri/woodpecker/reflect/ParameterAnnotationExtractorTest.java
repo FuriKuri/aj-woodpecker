@@ -1,9 +1,9 @@
 package io.github.furikuri.woodpecker.reflect;
 
 import io.github.furikuri.woodpecker.annotation.NotNull;
-import io.github.furikuri.woodpecker.examples.Example;
-import io.github.furikuri.woodpecker.examples.SimpleJoinPoint;
-import io.github.furikuri.woodpecker.examples.SimpleMethodSignature;
+import io.github.furikuri.woodpecker.helper.Example;
+import io.github.furikuri.woodpecker.helper.SimpleJoinPoint;
+import io.github.furikuri.woodpecker.helper.SimpleMethodSignature;
 import org.junit.Test;
 
 import java.util.List;
