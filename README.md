@@ -2,13 +2,15 @@
 
 A little AspectJ libary. Contains helpful aspects.
 
-## ToDo
+## Task list
 - [x] FieldTrace
 - [x] NotNull
 - [x] ToString
 - [ ] EqualsAndHashCode
 - [ ] MethodTrace
-- [ ] ...
+- [ ] SurroundException
+- [ ] Condition
+- [ ] Cache
 
 ## Usage
 
