@@ -12,7 +12,7 @@ A little AspectJ library. Contains helpful aspects.
 - [ ] MethodTrace
 - [ ] SurroundException
 - [ ] Condition
-- [ ] Cache
+- [x] Cache
 
 ## Usage
 

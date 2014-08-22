@@ -6,7 +6,7 @@ import org.aspectj.lang.Signature;
 import java.lang.reflect.Field;
 
 public aspect FieldTracerAspect {
-    private final Logger LOG = Logger.getLogger(FieldTracerAspect.class);
+    private static final Logger LOG = Logger.getLogger(FieldTracerAspect.class);
 
     before(Object arg, Object prop) : set(@io.github.furikuri.woodpecker.annotation.Trace * *.*)
             && args(arg) && target(prop) {
