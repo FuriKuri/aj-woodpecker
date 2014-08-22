@@ -1,6 +1,6 @@
 # woodpecker
 
-A little AspectJ libary. Contains helpful aspects.
+A little AspectJ library. Contains helpful aspects.
 
 ## Task list
 - [x] FieldTrace
