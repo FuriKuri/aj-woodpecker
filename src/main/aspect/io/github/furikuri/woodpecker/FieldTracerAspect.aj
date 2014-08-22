@@ -9,18 +9,21 @@ public aspect FieldTracerAspect {
     private final Logger log = Logger.getLogger(FieldTracerAspect.class);
 
     before(Object arg, Object prop) : set(@io.github.furikuri.woodpecker.annotation.Trace * *.*) && args(arg) && target(prop) {
+        Object oldValue = null;
         try {
-            Field field = getField(thisJoinPoint.getSignature());
-            Object oldValue = field.get(prop);
+            oldValue = getFieldValue(thisJoinPoint.getSignature(), prop);
             log.debug("Old value: " + oldValue + "; New value: " + arg);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
-            // do nothing
+        } catch (IllegalAccessException | NoSuchFieldException e) {
+            // ignore exception here
         }
     }
 
-    private Field getField(Signature signature) throws NoSuchFieldException {
+    private Object getFieldValue(Signature signature, Object obj) throws IllegalAccessException, NoSuchFieldException {
         Field field = signature.getDeclaringType().getDeclaredField(signature.getName());
+        boolean fieldAccessible = field.isAccessible();
         field.setAccessible(true);
-        return field;
+        Object result = field.get(obj);
+        field.setAccessible(fieldAccessible);
+        return result;
     }
 }

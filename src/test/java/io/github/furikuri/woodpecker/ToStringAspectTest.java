@@ -11,8 +11,6 @@ public class ToStringAspectTest {
     public void returnsAllFields() {
         AnnotatedSampleClass annotatedSampleClass = new AnnotatedSampleClass();
         assertEquals("AnnotatedSampleClass[a=1,name=Class]", annotatedSampleClass.toString());
-
-        annotatedSampleClass.setA(34);
     }
 
     @Test
