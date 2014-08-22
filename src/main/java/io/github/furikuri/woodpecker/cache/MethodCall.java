@@ -26,13 +26,11 @@ public class MethodCall {
 
     @Override
     public boolean equals(Object other) {
-        System.out.println(EqualsBuilder.reflectionEquals(this, other));
         return EqualsBuilder.reflectionEquals(this, other);
     }
 
     @Override
     public int hashCode() {
-        System.out.println(HashCodeBuilder.reflectionHashCode(this));
         return HashCodeBuilder.reflectionHashCode(this);
     }
 }

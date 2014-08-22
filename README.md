@@ -8,7 +8,7 @@ A little AspectJ library. Contains helpful aspects.
 - [x] FieldTrace
 - [x] NotNull
 - [x] ToString
-- [ ] EqualsAndHashCode
+- [x] EqualsAndHashCode
 - [ ] MethodTrace
 - [ ] SurroundException
 - [ ] Condition
