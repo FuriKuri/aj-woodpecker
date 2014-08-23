@@ -9,7 +9,7 @@ A little AspectJ library. Contains helpful aspects.
 - [x] NotNull
 - [x] ToString
 - [x] EqualsAndHashCode
-- [ ] MethodTrace
+- [x] MethodTrace
 - [ ] SurroundException
 - [ ] Condition
 - [x] Cache
