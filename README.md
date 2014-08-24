@@ -10,9 +10,9 @@ A little AspectJ library. Contains helpful aspects.
 - [x] ToString
 - [x] EqualsAndHashCode
 - [x] MethodTrace
+- [x] Cache
 - [ ] SurroundException
 - [ ] Condition
-- [x] Cache
 
 ## Usage
 
