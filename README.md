@@ -6,7 +6,8 @@ A little AspectJ library. Contains helpful aspects.
 
 ## Task list
 - [x] FieldTrace
-- [x] NotNull
+- [x] NotNull for Methods
+- [ ] NotNull for Fields
 - [x] ToString
 - [x] EqualsAndHashCode
 - [x] MethodTrace
